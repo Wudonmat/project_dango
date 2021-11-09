@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block head %}
+<script>
+</script>
+{% endblock %}
+{% block title %}산책할땐 DANGO{% endblock%}
+{% block contents %}
+        <!-- 첫번째 컨테이너 -->
+        <div class="container-fluid" style="background-color: white;">
+            <div class="row justify-content-center">
+                {% load static %}
+                <div class="col-xs-12 col-sm-8 col-md-8 "><img src="{% static 'landing/img/walking_dog.jpeg' %}" class="img-fluid" alt="Responsive image"></div>
+                <div class="col-xs-6 col-md-4 align-self-end">
+                        <div class="col"><p>모르는개와 산책??</p>
+                        <p>이웃집 댕댕이와 산책하자</p>
+                        <p>강아지는 없지만... 강아지와 산책은 하고싶다면?</p>
+                        <p>내 새끼가 우리동네 인싸 강아지로!</p></div>
+                        <div class="col offset-md-3">
+                        <p class=""><a class="btn btn-primary btn-lg" href="#" role="button">dango</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
