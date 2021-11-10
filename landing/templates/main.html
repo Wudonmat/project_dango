@@ -1,25 +1,35 @@
 {% extends "base.html" %}
 {% block head %}
-<script>
-</script>
+<style>
+</style>
 {% endblock %}
 {% block title %}산책할땐 DANGO{% endblock%}
 {% block contents %}
-        <!-- 첫번째 컨테이너 -->
-        <div class="container-fluid" style="background-color: white;">
-            <div class="row justify-content-center">
+<!--         첫번째 컨테이너-->
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"" style="background-color: white;">
+            <div class="col justify-content-center">
                 {% load static %}
-                <div class="col-xs-12 col-sm-8 col-md-8 "><img src="{% static 'landing/img/walking_dog.jpeg' %}" class="img-fluid" alt="Responsive image"></div>
-                <div class="col-xs-6 col-md-4 align-self-end">
-                        <div class="col"><p>모르는개와 산책??</p>
-                        <p>이웃집 댕댕이와 산책하자</p>
-                        <p>강아지는 없지만... 강아지와 산책은 하고싶다면?</p>
-                        <p>내 새끼가 우리동네 인싸 강아지로!</p></div>
-                        <div class="col offset-md-3">
-                        <p class=""><a class="btn btn-primary btn-lg" href="#" role="button">dango</a></p>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12" style="padding: 0px;"><img src="{% static 'landing/img/main1.png' %}" class="img-fluid" alt="Responsive image"></div>
+                    <div class="row">
+                        <div class="col-xs-4 col-md-4 align-self-end">
+                          <img src="{% static 'landing/img/sadog.jpeg' %}" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="col-xs-6 col-md-6 align-self-center" style="float: right;">
+                            <div class="col-md-12 align-self-center offset-md-2" >
+                          <h6 style="opacity: 0.3;" 댕댕이 새 사람과 산책 하고파.</h6>
+                          <h5 style="opacity: 0.4;">댕댕이 새 사람과 산책 하고파.</h5>
+                          <h4 style="opacity: 0.5;">댕댕이 새 사람과 산책 하고파.</h4>
+                          <h3 style="opacity: 0.6;">댕댕이 새 사람과 산책 하고파.</h3>
+                          <h2 style="opacity: 0.8;">댕댕이 새 사람과 산책 하고파.</h2>
+                          <h1 >댕댕이 새 사람과 산책 하고파.</h1>
+                                </div>
+                            <div class="col-md-12 offset-md-6" style="margin-top: 50px;">
+                                <a class="btn btn-primary btn-lg bg-black" href="#" role="button">댕고 시작하기</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 {% endblock %}

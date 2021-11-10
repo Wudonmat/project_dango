@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/12756b3f48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'accounts/js/signup.js' %}">
+    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="form_wrapper">
+        <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step" style="background-color: #E5EE55;"></span> </div>
+        <div class="form_container">
+            <div class="title_container">
+                <h2>회원가입 완료</h2>
+            </div>
+            <p style="text-align:center;"><img src="{% static 'accounts/img/success.png' %}" alt="Logo"></p>
+            <h2 style="text-align:center;">레쓰고댕행</h2>
+            <form action="{% url 'accounts:login' %}" style="margin-top: 20px;">
+            <input class="button" name="login" type="submit" value="로그인" />
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <p class="credit">Developed by <a href="error.png" target="_blank">이웃집댕댕이</a></p>
+</body>
+
+</html>
