@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     {% block head %}
 
     {% endblock %}
@@ -42,10 +43,10 @@
             <a class="nav-link active" aria-current="page" href="{% url 'matching:main' %}">댕고</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'matching:main' %}">요청보기</a>
+            <a class="nav-link" href="{% url 'matching:request' %}">요청보기</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://smartstore.naver.com/dolzip">쇼핑몰</a>
+            <a class="nav-link" href="#">충전하기</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">가이드</a>

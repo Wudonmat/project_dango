@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 {% block head %}
-<style>
-</style>
+{% load static %}
 {% endblock %}
 {% block title %}산책할땐 DANGO{% endblock%}
 {% block contents %}
 <!--         첫번째 컨테이너-->
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"" style="background-color: white;">
             <div class="col justify-content-center">
-                {% load static %}
                 <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12" style="padding: 0px;"><img src="{% static 'landing/img/main1.png' %}" class="img-fluid" alt="Responsive image"></div>
                     <div class="row">
                         <div class="col-xs-4 col-md-4 align-self-end">

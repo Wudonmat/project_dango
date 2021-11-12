@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head %}
+<script>
+    body {
+    background-color: #eee
+}
+
+.card {
+    border: none
+}
+
+.user-content p {
+    margin-top: 5px;
+    font-size: 12px
+}
+
+.ratings i {
+    color: blue
+}
+</script>
+{% endblock %}
+{% block title %}산책할땐 DANGO{% endblock%}
+{% block contents %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="background-color: white;">
+<div class="container mt-5 mb-5">
+    <div style="padding-top: 20px; margin-bottom: 30px;"><a style="font-size: 50px;">댕행 요청</a></div>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">송파구보안관</h5>
+      <small>3분전</small>
+    </div>
+    <p class="mb-1">지옥견 비글과 같이 산책하고 싶어요. </p>
+    <small>수락 / 거절</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+</div>
+    </div>
+</div>
+</div>
+{% endblock %}
